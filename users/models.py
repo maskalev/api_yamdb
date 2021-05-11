@@ -59,3 +59,6 @@ class User(AbstractUser):
         ordering = ('username', )
         verbose_name = 'User'
         verbose_name_plural = 'Users'
+
+    def __str__(self):
+        return self.username

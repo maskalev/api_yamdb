@@ -7,3 +7,6 @@ class Genre(models.Model):
 
     class Meta:
         ordering = ['name']
+
+    def __str__(self):
+        return self.name
