@@ -29,4 +29,4 @@ class Review(models.Model):
         ordering = ['-pub_date']
 
     def __str__(self):
-        return self.pub_date, self.author, self.title
+        return f'{self.pub_date}, {self.author}, {self.title}'
