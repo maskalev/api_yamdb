@@ -37,7 +37,7 @@ docker-compose restart
 docker-compose exec -T web python manage.py loaddata fixtures.json
 ```
 
-Сервис доступен на *localhost*.
+Сервис доступен на *localhost/api/v1/*.
 
 Документация API доступна на *localhost/redoc/*.
 
@@ -47,7 +47,7 @@ docker-compose exec -T web python manage.py loaddata fixtures.json
 
 1. Список жанров
 ```commandline
-localhost/api/v1/genres/?format=json
+http://localhost/api/v1/genres/?format=json
 ```
 
 ```
@@ -82,7 +82,7 @@ results: [
 
 2. Информация о произведении
 ```commandline
-localhost/api/v1/titles/1/?format=json
+http://localhost/api/v1/titles/1/?format=json
 ```
 
 ```commandline
@@ -107,7 +107,7 @@ localhost/api/v1/titles/1/?format=json
 
 3. Отзывы о произведении
 ```commandline
-localhost/api/v1/titles/3/reviews/?format=json
+http://localhost/api/v1/titles/3/reviews/?format=json
 ```
 
 ```commandline
@@ -136,7 +136,7 @@ localhost/api/v1/titles/3/reviews/?format=json
 
 4. Комментарии к отзыву
 ```commandline
-localhost/api/v1/titles/5/reviews/10/comments/
+http://localhost/api/v1/titles/5/reviews/10/comments/?format=json
 ```
 
 ```commandline
